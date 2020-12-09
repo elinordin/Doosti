@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doosti - Couch surf in Afghanistan</title>
+
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" type="module" defer></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Scheherazade&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/249ca23121.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+
+<body>
+    <nav>
+        <img class="logo" src="images/doosti-logo.png" alt="Doosti logo">
+        <menu id="big-menu" class="links">
+            <ul>
+                <li><a href="">Forum</a></li>
+                <li><a href="#about">About us</a></li>
+                <li><a href="">Find a host</a></li>
+                <li><a href="">Volounteer as host</a></li>
+                <li><a href="">FAQ</a></li>
+            </ul>
+        </menu>
+        <menu id="hamburger-menu">
+            <span class="line1"></span>
+            <span class="line2"></span>
+            <span class="line3"></span>
+        </menu>
+    </nav>
+    
+
+    <header>
+        <h1>Explore Afghanistan</h1>
+        <p>For centuries Afghan people have welcomed strangers and travelers in their houses. The
+            practice is so deep in the culture that it comes with an old expression: "The guest is God's
+            friend." Guest here means anyone who knocks on one's door regardless of distinctions of
+            race, religion, political affiliation as well as financial status.</p>
+        <div class="buttons">
+            <button class="yellow-btn">Book a free stay</button>
+            <button class="blue-btn">Become a host</button>
+        </div>
+    </header>
+
+    <section id="search">
+        <form id="search-form" action="">
+            <div class="destination-box">
+                <label for="destination">Destination</label>
+                <select class="inputs" name="destination" id="destination">
+                    <option value="kabul">Kabul</option>
+                    <option value="bamyan">Bamyan</option>
+                    <option value="pamir">Pamir</option>
+                    <option value="parun-nuristan">Parun Nuristan</option>
+                    <option value="mazar-e-sharif">Mazar-e Sharif</option>
+                </select>
+            </div>
+    
+            <div class="visitors-box">
+                <label for="visitors">Number of visitors</label>
+                <select class="inputs" name="visitors" id="visitors">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+    
+            <div class="check-in-box">
+                <label for="check-in">Check-in date</label>
+                <input class="inputs" type="date" name="check-in">
+            </div>
+    
+            <div class="check-out-box">
+                <label for="check-out">Check-out date</label>
+                <input class="inputs" type="date" name="check-out">
+            </div>
+            
+            <input type="submit" name="submit" id="submit" value="Search" class="yellow-btn">
+        </form>
+    </section>
+    
+
+    <main>
+        <section id="recommendations">
+            <h2>Top Recommendations for You</h2>
+            <div id="card-container">
+                <template id="card-template">
+                    <div class="card">
+                        <img src="" alt="">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="last-star"></i>
+                        </div>
+                        <div class="location-box">
+                            <i class="fas fa-map-marker-alt"></i><p class="location"></p>
+                        </div>
+                        <div class="host-box">
+                            <i class="fas fa-user"></i><p class="host"></p>
+                        </div>
+                        <div class="buttons">
+                            <button class="yellow-btn">Book</button>
+                            <button class="blue-btn">Read More</button>
+                        </div>
+                    </div>
+                </template>
+            </div>
+            <button id="view-all-btn" class="yellow-btn">View All Locations</button>
+        </section>
+
+        <section id="about">
+            <div class="white-card">
+                <h2>Who Are We?</h2>
+            </div>
+            <div class="blue-card">
+                <p>
+                    Although Afghanistan being a multinational state didn't ignite the war, but according to most scholars, it
+                    fueled the conflict. Therefore, to start the peace process in the country, we must:
+                    - Help Afghans to understand people of different ethnicities by exchanging their knowledge, skills, and stories.
+                    - Encourage people to form meaningful relationships between their communities.
+                    <br><br>
+                    This is where <span class="bold">Doosti</span> comes in. It's a social networking platform based on the above
+                    objectives. On this platform, travelers can find local hosts and stay with them. It's a free tool
+                    where hosts and users exchange services instead of money. A blend of CouchSurfing and
+                    TripAdvisor, it's customized according to the needs of Afghan users.
+                    <br><br>
+                    Since most of the domestic tourism infrastructure like hotels
+                    have been destroyed in the war, staying with local people is essential. <span class="bold">Doosti</span> will help
+                    travelers to find a host in different parts of the country.
+                    <br><br>
+                    <span class="italic">The guest is God's friend.</span>
+                    <br>
+                    <span id="farsi">مهمان دوست خداست</span>
+                </p>
+                <button class="yellow-btn">Become a host</button>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="left-side">
+            <img class="logo" src="images/doosti-logo.png" alt="Doosti logo">
+            <p>&copy; 2020 Doosti Corporation. All rights reserved.</p>
+        </div>
+        <div class="right-side">
+            <ul>
+                <li><a href="">Forum</a></li>
+                <li><a href="#about">About us</a></li>
+                <li><a href="">Find a host</a></li>
+                <li><a href="">Volounteer as host</a></li>
+                <li><a href="">FAQ</a></li>
+                <li><a href="">Terms and Conditions</a></li>
+            </ul>
+        </div>
+        
+    </footer>
+    
+</body>
+</html>
