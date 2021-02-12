@@ -8,7 +8,7 @@ Create a website based on your classmate's passion company. Base your design upo
 
 
 ### :hourglass: Time spent:
-15 days.
+1,5 days.
 
 
 ### :checkered_flag: Goals:
